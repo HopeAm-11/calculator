@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box; 
+    text-transform: capitalize;
+}
+
+body{
+    min-height: 100vh;
+    border:1px solid black;
+    display: grid;
+  justify-content: center;
+  align-content: center;
+}
+
+#p{
+    width: 100%;
+    border:1px solid rgb(16, 147, 187);
+
+}
+#cal-container{
+    border:1px solid red;
+   display: grid;
+   grid-template-columns: repeat(3, 100px);
+   grid-template-rows: repeat(4, auto);
+
+}
+
+button {
+    background-color: #e6e6e6;
+    padding: 10px 10px;
+    text-decoration: none;
+    font-size: 16px;
+
+  }
