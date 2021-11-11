@@ -1,7 +1,9 @@
 
 let text = document.getElementById("p");
-let one = document.getElementById("btn-one").value;
-let two = document.getElementById("btn-two").value;
+text.innerHTML;
+var values = [];
+//let one = document.getElementById("btn-one").value;
+//let two = document.getElementById("btn-two").value;
 
 //document.getElementById("btn-one").addEventListener("click", ()=>{
 //    let one = document.getElementById("btn-one").value;
@@ -27,6 +29,9 @@ document.body.addEventListener("click", function(event){
       // select that triggered the event and update it
       event.target.textContent = event.target.value
       text.innerHTML= event.target.value;
+      values.push(+text.innerHTML);
+
     }
+
   });
 
