@@ -22,7 +22,7 @@ numbers.forEach((number) => {
 operators.forEach((op) => {
 
   // and for each one we add a 'click' listener
- op.addEventListener('click', (e) => {
+ op.addEventListener('click', () => {
   if(text.textContent !== ""){
     num1 = text.textContent
     ope = op.value
@@ -41,20 +41,15 @@ operators.forEach((op) => {
 
 // calculat section: 
 
-  
-let calculate = {
-  '+': function(a, b) {
-     return a + b
-  },
-  '<': function(a, b) {
-     return a < b
-  },
-  "*": function(a,b){
-    return a*b
+
+function calculate(num1, ope, num2) {
+  switch (ope) {
+     case '+':
+        return +num1 + +num2;
+     case '-':
+        return +num1 - +num2;
   }
-};
-
-
+}
 
 
 
@@ -66,5 +61,8 @@ document.getElementById('btn-clear').addEventListener('click',()=>{
 })
 
 equal.addEventListener('click',()=>{
-  return console.log(equal.value)
+  num2 =text.textContent 
+  text.textContent =  calculate(num1,ope,num2)
+ 
+
 })
