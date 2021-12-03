@@ -20,18 +20,15 @@ numbers.forEach((number) => {
 
     if (ope == undefined && num1 == undefined) {
 
-<<<<<<< HEAD
 //document.getElementById("btn-one").addEventListener("click", ()=>{
 //    let one = document.getElementById("btn-one").value
 ///    text.innerHTML = one;
 //});
-=======
       currentDisplay.innerText += e.target.value
     } else if (ope !== undefined && num1 !== undefined) {
       currentDisplay.innerText += e.target.value
       num2 = currentDisplay.textContent
     
->>>>>>> branch
 
     }
   })
