@@ -17,11 +17,23 @@ body {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#div-p{
-    width: 100%;
-    border:1px solid rgb(16, 147, 187);
-    
+#div-p {
+    background-color: #c2bcbcc2;
+    grid-area: 1/1/2/5;
+    border: 3mm ridge rgba(95, 94, 94, 0.6);
+    text-align: right;
+    display: grid;
+    font-size: 1.3rem;
+    align-content: space-around;
 }
+
+h1 {
+    text-align: center;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 3em;
+    letter-spacing: -2px;
+}
+h2{}
 
 #cal-container {
 
