@@ -1,36 +1,147 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box; 
-    text-transform: capitalize;
+    box-sizing: border-box;
+    text-transform: uppercase;
 }
 
-body{
+/*body style*/
+body {
     min-height: 100vh;
-    border:1px solid black;
     display: grid;
-  justify-content: center;
-  align-content: center;
+    justify-content: center;
+    align-content: space-evenly;
+    color: rgb(44, 43, 43);
+    font-family: Courier, 'monospace';
+    background: linear-gradient(to top, #085078, #85d8ce);
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
-#div-p{
-    height: 50px;
-    width: 100%;
-    border:1px solid rgb(16, 147, 187);
+#div-p {
+    background-color: #c2bcbcc2;
+    grid-area: 1/1/2/5;
+    border: 3mm ridge rgba(95, 94, 94, 0.6);
+    text-align: right;
+    display: grid;
+    font-size: 1.3rem;
+    align-content: space-around;
+}
+
+h1 {
+    text-align: center;
+    font-family: "Trebuchet MS", sans-serif;
+    font-size: 3em;
+    letter-spacing: -2px;
 
 }
-#cal-container{
-    border:1px solid red;
-   display: grid;
-   grid-template-columns: repeat(3, 100px);
-   grid-template-rows: repeat(4, auto);
 
+#cal-container {
+
+    display: grid;
+    gap: 3px;
+    grid-template-columns: repeat(4, 80px);
+    grid-template-rows: repeat(6, 80px);
+    padding: 3px;
+    background-color: #dddddd93;
 }
+
+/*btn style*/
 
 button {
-    background-color: #e6e6e6;
-    padding: 10px 10px;
+    background-color: #ebe2e2b7;
     text-decoration: none;
     font-size: 16px;
+    border: 1px solid grey;
+    font-weight: bold;
+    cursor: pointer;
+    font-family: Courier, 'monospace';
+}
 
-  }
+button:hover {
+    background-color: #9e9e9e83;
+    box-shadow: 4px 4px 20px 0 rgba(189, 189, 189, 0.863);
+    transition: all .2s ease-out;
+}
+
+.ac {
+    grid-area: 2/1/3/3;
+    /*row1 col1 row2 col2*/
+    background-color: #6f84e469;
+    font-weight: 300
+}
+
+.ac:hover {
+    background-color: #2f439969;
+}
+
+.del {
+    font-weight: 300;
+    grid-area: 2/3/3/4;
+}
+
+.op {
+    grid-column: 4/5;
+
+    background-color: #b3b3b360;
+    font-weight: thin;
+}
+
+.op:hover {
+    background-color: #d4d4d4ab;
+    box-shadow: 0px 0px 20px 0 rgba(189, 189, 189, 0.863);
+}
+
+.nine {
+    grid-area: 3/3/3/4;
+}
+
+.eight {
+    grid-area: 3/2/3/3;
+}
+
+.seven {
+    grid-area: 3/1/3/2;
+}
+
+.six {
+    grid-area: 4/3/4/4;
+}
+
+.five {
+    grid-area: 4/2/4/3;
+}
+
+.four {
+    grid-area: 4/1/4/2;
+}
+
+.three {
+    grid-area: 5/3/5/4;
+}
+
+.two {
+    grid-area: 5/2/5/3;
+}
+
+.one {
+    grid-area: 5/1/5/2;
+}
+
+.zero {
+    grid-area: 6/3/6/4;
+}
+
+.equal {
+    grid-area: 6/4/7/5;
+    background-color: #e46f7969;
+}
+
+.equal:hover {
+    background-color: #b3424b69;
+
+}
+
+.dot {
+    grid-area: 6/1/6/3;
+
+}
