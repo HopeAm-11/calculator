@@ -5,7 +5,6 @@
     text-transform: uppercase;
 }
 
-/*body style*/
 body {
     min-height: 100vh;
     display: grid;
@@ -14,7 +13,6 @@ body {
     color: rgb(44, 43, 43);
     font-family: Courier, 'monospace';
     background: linear-gradient(to top, #085078, #85d8ce);
-    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
 }
 
 #div-p {
@@ -33,7 +31,6 @@ h1 {
     font-size: 3em;
     letter-spacing: -2px;
 }
-h2{}
 
 #cal-container {
 
@@ -45,7 +42,6 @@ h2{}
     background-color: #dddddd93;
 }
 
-/*btn style*/
 
 button {
     background-color: #ebe2e2b7;
@@ -65,7 +61,6 @@ button:hover {
 
 .ac {
     grid-area: 2/1/3/3;
-    /*row1 col1 row2 col2*/
     background-color: #6f84e469;
     font-weight: 300
 }
@@ -138,10 +133,8 @@ button:hover {
 
 .equal:hover {
     background-color: #b3424b69;
-
 }
 
 .dot {
     grid-area: 6/1/6/3;
-
 }
