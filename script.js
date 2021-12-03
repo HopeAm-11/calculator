@@ -4,7 +4,7 @@ let one = document.getElementById("btn-one").value;
 let two = document.getElementById("btn-two").value;
 
 //document.getElementById("btn-one").addEventListener("click", ()=>{
-//    let one = document.getElementById("btn-one").value;
+//    let one = document.getElementById("btn-one").value
 ///    text.innerHTML = one;
 //});
 
