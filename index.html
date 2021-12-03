@@ -7,33 +7,34 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Calculator</title>
+ 
 </head>
 
 <body>
-    <div id="div-p">
-        <p id=p></p>
-    </div>
+    <h1>Calculator</h1>
     <div id="cal-container">
-
-        <button id="btn-clear" >AC</button>
-        <button id="btn-modu" value="%">%</button>
-        <button id="btn-devide" value="÷">÷</button>
-        <button id="btn-sub" value="-">-</button>
-        <button id="btn-plus" value="
-        +">+</button>
-        <button id="btn-multi" value="*">x</button>
-        <button id="btn-one" value="1">1</button>
-        <button id="btn-two" value="2">2</button>
-        <button id="btn-three" value="3">3</button>
-        <button id="btn-four" value="4">4</button>
-        <button id="btn-five" value="5">5</button>
-        <button id="btn-six" value="6">6</button>
-        <button id="btn-seven" value="7">7</button>
-        <button id="btn-eight" value="8">8</button>
-        <button id="btn-nine" value="9">9</button>
-        <button id="btn-zero" value="0">0</button>
-        <button id="btn-dot" value="."> .</button>
-        <button id="btn-equal" value="=">=</button>
+        <div id="div-p">
+            <p id="p-prev-display" class = "prev-display"></p>
+            <p id="current-p-display" class="current-display" value="0"></p>
+        </div>
+        <button id="btn-clear" class="ac">AC</button>
+        <button id="btn-delete" class="del">Del</button>
+        <button value="÷"name="operator" class="op">÷</button>
+        <button value="-"name="operator"class="op">-</button>
+        <button id="plus" name="operator" value="+"class="op">+</button>
+        <button name="operator" value="*"class="op">✕</button>
+        <button class="btn-class one" name="numbers" value="1">1</button>
+        <button class="btn-class two" name="numbers" value="2">2</button>
+        <button class="btn-class three" name="numbers" value="3">3</button>
+        <button class="btn-class four" name="numbers" value="4">4</button>
+        <button class="btn-class five" name="numbers" value="5">5</button>
+        <button class="btn-class six" name="numbers" value="6">6</button>
+        <button class="btn-class seven" name="numbers" value="7">7</button>
+        <button class="btn-class eight" name="numbers" value="8">8</button>
+        <button class="btn-class nine" name="numbers" value="9">9</button>
+        <button class="btn-class zero" data-zero name="numbers" value="0">0</button>
+        <button class="btn-class dot" id="dot" name="numbers" value="."> .</button>
+        <button class="btn-class equal" name="equal" id="op" value="=">=</button>
     </div>
     <script src="script.js"></script>
 </body>
