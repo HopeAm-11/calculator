@@ -124,7 +124,6 @@ equal.addEventListener('click', () => {
  }
 })
 
-
 // delete btn 
 
   del.addEventListener('click', () => {
